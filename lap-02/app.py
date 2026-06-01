@@ -1,9 +1,19 @@
 from flask import Flask, render_template, request
-from cipher.caesar import CaesarCipher
-from cipher.vigenere import VigenereCipher
-from cipher.playfair import PlayFairCipher
-from cipher.railfence import RailFenceCipher
-from cipher.Transposition import TranspositionCipher
+
+# 1. Caesar
+from cipher.caesar.caesar import CaesarCipher
+
+# 2. Vigenere
+from cipher.vigenere.vigenere import VigenereCipher
+
+# 3. Playfair
+from cipher.playfair.playfair import PlayFairCipher
+
+# 4. Railfence
+from cipher.railfence.railfence import RailFenceCipher
+
+# 5. Transposition (Lưu ý chữ T viết hoa theo tên folder của bạn)
+from cipher.Transposition.Transposition import TranspositionCipher
 
 app = Flask(__name__)
 
